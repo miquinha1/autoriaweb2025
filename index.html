@@ -1,63 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Atividade CSS - Aula</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-      rel="stylesheet"
-    />
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Micaías Tavares - UX e Dev Front-end</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+<body>
 
-    <style>
-      body {
-        font-family: "Inter";
-        padding: 20px;
-        background: #eee;
-      }
-
-      .card {
-        padding-left: 24px;
-        padding-right: 24px;
-        width: 624px;
-        background: #fff;
-        border-radius: 8px;
-      }
-
-      .card-body {
-        border-left: 1px solid #eee;
-        border-right: 1px solid #eee;
-        padding-top: 24px;
-        padding-bottom: 24px;
-      }
-
-      .footer {
-        padding-left: 24px;
-        padding-right: 24px;
-      }
-
-      h3 {
-        font-size: 32px;
-        font-family: "Archivo";
-      }
-    </style>
-  </head>
-  <body>
-    <div class="card">
-      <div class="card-body">
-        <img src="img/bg.png" alt="" />
-
-        <div class="footer">
-          <h3>Guia para organização e fluxo de trabalho em UI Design</h3>
-          <img src="img/logo-figma.png" alt="" />
-          <p>
-            Dicas práticas e efetivas para ganhar em produtividade e organização
-            em projetos no Figma.
-          </p>
-          <img src="img/logo-boost.png" alt="" />
-        </div>
-      </div>
+  <header>
+  <div class="header-inner">
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-behance"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
     </div>
-  </body>
+
+    <nav class="navbar">
+      <ul>
+        <li><a href="#">Estudos de Casos</a></li>
+        <li><a href="#">Trabalhos</a></li>
+        <li><a href="#">Entre em contato</a></li>
+      </ul>
+    </nav>
+
+    <button class="mobile-menu" aria-label="Abrir menu">
+      <i class="fas fa-bars"></i>
+      <span class="menu-text">Menu</span>
+    </button>
+  </div>
+</header>
+
+
+  <main>
+    <section class="profile">
+      <div class="profile-text">
+        <h1>Micaías <span>Tavares</span></h1>
+        <h2>UX e Dev Front-end</h2>
+        <p>
+          Sou um híbrido raro: Design Systems + Engenharia de Produto.
+          Entrego de ponta a ponta – da descoberta à produção – com métricas de negócio
+          na cabeceira e DX/UX no detalhe. Tradução simultânea entre PMs, Design,
+          Front, Back e Data. Sem teatrinho: shippo, meço, repito.
+        </p>
+        <a href="#" class="cta">Vamos trabalhar juntos <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="profile-image">
+        <img src="assets/img/perfil.jpeg" alt="Foto de perfil">
+      </div>
+    </section>
+
+    <section class="companies">
+      <h3>Trabalhou em:</h3>
+      <div class="company-logos">
+        <img src="assets/img/clickup.png" alt="ClickUp" class='clickup'>
+        <img src="assets/img/dropbox.png" alt="Dropbox">
+        <img src="assets/img/paychex.png" alt="Paychex">
+        <img src="assets/img/elastic.png" alt="Elastic">
+        <img src="assets/img/stripe.png" alt="Stripe">
+      </div>
+    </section>
+  </main>
+
+</body>
 </html>
